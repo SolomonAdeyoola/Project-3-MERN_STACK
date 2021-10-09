@@ -14,6 +14,7 @@
 Launched EC2 instance of Linux Ubuntu Server 20.04 LTS (HVM) and named it as pbl_p3_mern. Created security group with relevant ports opened and also created and saved my private key to be used for SSH into the EC2 instance.
 
 ![EC2 Machine](./images/EC2.PNG)
+
 *EC2 Instance Linux Ubuntu Server 20.04 1 CPU 8G Storage*
 
 update and upgrade Ubuntu
