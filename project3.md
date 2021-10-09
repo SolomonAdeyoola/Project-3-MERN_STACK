@@ -40,3 +40,5 @@ Create "Todo" directory and initialise the project using npm init, so that a new
 `npm init`
 
 
+![Todo/](./images/Todo_directory.PNG)
+*Todo/package.json*
