@@ -1,2 +1,1 @@
-# Project-3-MERN_STACK
-project 3
+## Creation of a simple To-Do App using MERN stack. A frontend application was created using React.js that communicates with a backend application written using Expressjs. A Mongodb backend was created for storing tasks in a database.
