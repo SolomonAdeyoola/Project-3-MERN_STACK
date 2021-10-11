@@ -17,6 +17,8 @@ Launched EC2 instance of Linux Ubuntu Server 20.04 LTS (HVM) and named it as pbl
 
 *EC2 Instance Linux Ubuntu Server 20.04 1 CPU 8G Storage*
 
+### Step 1: Backend Configuration:
+
 update and upgrade Ubuntu
 `sudo apt update && sudo apt upgrade`
 
@@ -43,3 +45,11 @@ Create "Todo" directory and initialise the project using npm init, so that a new
 
 ![Todo/](./images/Todo_directory.PNG)
 *Todo/package.json*
+
+
+Install expressjs
+
+`npm install express`
+
+
+Step 2 – Frontend creation
