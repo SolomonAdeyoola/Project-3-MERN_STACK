@@ -85,6 +85,36 @@ Start the server in the backend using
 ` node index.js`
 
 ![Express_running](./images/Express_server.PNG)
-*Todo/package.json*
+*Express server installed at backend*
+
+Creating routes for the app to create new tasks, display created tasks and delete completed tasks.
+
+Creating models to house the database. We would be using MongoDB, a NoSQL database. To create the needed schema, we installed mongoose in our Todo directory, which is a Node.js package that makes working with mongodb easier.
+
+`npm install mongoose`
+
+We input the following codes in the todo.js file in models directory
+
+`const mongoose = require('mongoose');`
+`const Schema = mongoose.Schema;`
+
+`//create schema for todo`
+`const TodoSchema = new Schema({`
+`action: {`
+`type: String,`
+`required: [true, 'The todo text field is required']`
+`}`
+`})`
+
+`//create model for todo`
+`const Todo = mongoose.model('todo', TodoSchema);`
+
+`module.exports = Todo;`
+
+MongoDB:
+Created MongoDB database and obtained the database connection string which is made up of the database username, password and database endpoints. The connection string is included in the .env variable.
+
+![MongoDB_database](./MongoDB_instance.PNG)
+*Cluster 0 of MongoDB*
 
 Step 2 – Frontend creation
