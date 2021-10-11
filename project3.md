@@ -84,7 +84,7 @@ Start the server in the backend using
 
 ` node index.js`
 
-![Express running](./images/Express_server_is_up.PNG)
+![Express_running](./images/Express_server.PNG)
 *Todo/package.json*
 
 Step 2 – Frontend creation
