@@ -51,5 +51,40 @@ Install expressjs
 
 `npm install express`
 
+Install the dotenv module
+
+`npm install dotenv `
+
+write the following codes in index.js file
+
+`const express = require('express');`
+`require('dotenv').config();`
+
+`const app = express();`
+
+`const port = process.env.PORT || 5000;`
+
+`app.use((req, res, next) => {`
+`res.header("Access-Control-Allow-Origin", "\*");`
+`res.header("Access-Control-Allow-Headers", "Origin, ``X-Requested-With, Content-Type, Accept");`
+`next();`
+`});`
+
+`app.use((req, res, next) => {`
+`res.send('Welcome to Express');`
+`});`
+
+`app.listen(port, () => {`
+`console.log(`Server running on port ${port}`)`
+`});`
+
+Notice that we have opted to use port 5000 in the code.
+
+Start the server in the backend using
+
+` node index.js`
+
+![Express running](./images/Express_server_is_up.PNG)
+*Todo/package.json*
 
 Step 2 – Frontend creation
