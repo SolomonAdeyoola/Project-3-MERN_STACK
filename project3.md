@@ -120,8 +120,63 @@ Created MongoDB database schema and obtained the database connection string whic
 
 The index.js file was updated to reflet the use of .env so that Node.js can connect to the datatbase as below:
 
-![index.js with env vartiable](./images/index.js.PNG)
-*Cluster 0 of MongoDB*
+![index.js with env vartiable](./images/capture_index.PNG)
+*.env use in index.js*
+
+Testing Backend Code without Frontend using RESTful API. Postman APP is used for the test as below
+
+![POST](./images/POST_.PNG)
+*USing POST request in Postman to test API endpoints*
+
+
+![GET](./images/GET_.PNG)
+*USing GET request in Postman to test API endpoints*
 
 
 Step 2 – Frontend creation
+
+In the same root directory as your backend code, which is the Todo directory, run:
+ `npx create-react-app client`
+
+ Installed concurrently and nodemon which are used to run more than one command simultaneously from the same terminal window and run monitor the server respectively
+
+ `npm install concurrently --save-dev`
+ `npm install nodemon --save-dev`
+
+
+`npm run dev`
+
+![Package.json](./images/Todo_directory.PNG)
+*Package.json update*
+
+ ![GET](./images/scripts_concurrently_nodemon.PNG)
+*Code change in package.json to enable concurrently and nodemon*
+
+
+port 3000 is opened in the security group on EC2 to ensure access to the server from the internet
+
+![React_frontend](./images/react_frontend_.PNG)
+*React frontend*
+
+Installed Axios, Promise based HTTP client for the browser & node.js
+
+`npm install axios`
+
+continued the design of the frontend interface with making changes to Input.js, ListTodo.js, Todo.js. App.css, App.js as below
+
+![App.js](./images/APP.PNG)
+*App.js update*
+
+![index.js](./images/index.PNG)
+*React frontend*
+
+![ListTodo.js](./images/ListTodo.PNG)
+*React frontend*
+
+`npm run dev`
+The To-Do app is ready for creating a task, deleting a task and viewing all your tasks. as outputted below
+
+![ToDo App completion](./images/Todo_App.PNG)
+*Todo app tested*
+
+# Project 3 completed!
