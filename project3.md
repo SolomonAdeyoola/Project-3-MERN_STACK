@@ -7,6 +7,7 @@
 - Node.js: A JavaScript runtime environment. It is used to run JavaScript on a machine rather than in a browser.
 
 ![MERN Archictecture](./images/mern_hld.PNG)
+
 *MERN Architecture*
 
 #### Step 0 – Spun-off EC2 Linux Ubuntu Server and Applied basic configurations
@@ -121,16 +122,17 @@ Created MongoDB database schema and obtained the database connection string whic
 The index.js file was updated to reflet the use of .env so that Node.js can connect to the datatbase as below:
 
 ![index.js with env vartiable](./images/capture_index.PNG)
-*.env use in index.js*
+
+*.env used in index.js*
 
 Testing Backend Code without Frontend using RESTful API. Postman APP is used for the test as below
 
 ![POST](./images/POST_.PNG)
-*USing POST request in Postman to test API endpoints*
+*Using POST request in Postman to test API endpoints*
 
 
 ![GET](./images/GET_.PNG)
-*USing GET request in Postman to test API endpoints*
+*Using GET request in Postman to test API endpoints*
 
 
 Step 2 – Frontend creation
@@ -147,6 +149,7 @@ In the same root directory as your backend code, which is the Todo directory, ru
 `npm run dev`
 
 ![Package.json](./images/Todo_directory.PNG)
+
 *Package.json update*
 
  ![GET](./images/scripts_concurrently_nodemon.PNG)
@@ -168,9 +171,11 @@ continued the design of the frontend interface with making changes to Input.js, 
 *App.js update*
 
 ![index.js](./images/index.PNG)
+
 *React frontend*
 
 ![ListTodo.js](./images/ListTodo.PNG)
+
 *React frontend*
 
 `npm run dev`
