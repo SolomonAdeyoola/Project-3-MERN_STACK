@@ -112,9 +112,16 @@ We input the following codes in the todo.js file in models directory
 `module.exports = Todo;`
 
 MongoDB:
-Created MongoDB database and obtained the database connection string which is made up of the database username, password and database endpoints. The connection string is included in the .env variable.
+Created MongoDB database schema and obtained the database connection string which is made up of the database username, password and database endpoints. The connection string is included in the .env variable.
 
-![MongoDB_database](./MongoDB_instance.PNG)
+![MongoDB_database](./images/MongoDB_instance.PNG)
 *Cluster 0 of MongoDB*
+
+
+The index.js file was updated to reflet the use of .env so that Node.js can connect to the datatbase as below:
+
+![index.js with env vartiable](./images/index.js.PNG)
+*Cluster 0 of MongoDB*
+
 
 Step 2 – Frontend creation
